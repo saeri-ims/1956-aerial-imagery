@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8' />
+  <title>FI 1956 Aerial Photos</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <!-- <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script> -->
+  <script src='../lib/js/mapbox-gl.js'></script>
+  <!-- <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' /> -->
+  <link href='../lib/styles/mapbox-gl.css' rel='stylesheet' />
+  <!-- <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script> -->
+  <script src='../lib/js/turf.min.js'></script>
+  <script src='../lib/js/jquery-3.3.1.min.js'></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id='map'></div>
+  <script>
+    var style = {
+      version: 8,
+      name: 'Aerial_Photos',
+      sources: {
+        'FI_1956': {
+          type: 'image',
+          url: '../data/F_I_35_0135.jpeg',
+          coordinates: [
+            [-60.290570, -51.278104], // a = [bbox[0], bbox[3]]
+            [-60.208361, -51.278104], // b = [bbox[2], bbox[3]]
+            [-60.208361, -51.330061], // c = [bbox[2], bbox[1]]
+            [-60.290570, -51.330061] // d = [bbox[0], bbox[1]]
+          ]
+        },
+        'aimgs': {
+          type: 'geojson',
+          data: '../data/1956_Aerial_Imagery.geojson'
+        },
+        'CoastLines': {
+          type: 'geojson',
+          data: '../data/FI_CoastLines_4326.geojson'
+        },
+        'FligthLines': {
+          type: 'geojson',
+          data: '../data/FlightLines_4326.geojson'
+        }
+      },
+      layers: [{
+          id: 'FI_1956',
+          type: 'raster',
+          source: 'FI_1956',
+          paint: {
+            'raster-opacity': 1
+          },
+          layout: {}
+        },
+        {
+          id: 'CoastLines',
+          type: 'line',
+          source: 'CoastLines',
+          paint: {
+            // 'line-color': '#486DE0'
+          },
+          layout: {
+            // visibility: 'none'
+          }
+        },
+        {
+          id: 'FligthLines',
+          type: 'line',
+          source: 'FligthLines',
+          paint: {
+            'line-color': '#486DE0'
+          }
+        },
+        {
+          id: 'aimgs_layer',
+          source: 'aimgs',
+          type: 'line',
+          paint: {
+            'line-color': ['match', ['get', 'present'], 0, '#cd0000', '#8dad24'],
+            'line-opacity': .5,
+          },
+          layout: {
+            // visibility: 'none'
+          },
+        },
+        {
+          id: 'geotiff_layer',
+          source: 'aimgs',
+          type: 'fill',
+          paint: {
+            'fill-color': ['match', ['get', 'geotiff'], 1, '#ff7f00', 'transparent'],
+            'fill-opacity': .5,
+          },
+          layout: {
+            // visibility: 'none'
+          }
+        }
+      ]
+    };
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: style,
+      center: [-59.3866, -51.7712], // Falklands
+      zoom: 8, // starting zoom
+      hash: style
+    });
+    map.on('load', function() {
+      map.addControl(new mapboxgl.ScaleControl());
+    });
+  </script>
+
+</body>
+
+</html>
