@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis version="3.6.0-Noosa" projectname="">
+<qgis projectname="" version="3.6.1-Noosa">
   <homePath path=""/>
   <title></title>
   <autotransaction active="0"/>
@@ -19,40 +19,35 @@
   </projectCrs>
   <layer-tree-group>
     <customproperties/>
-    <layer-tree-layer name="1956-aerial-imagery" id="1956_aerial_imagery_108998d5_18d7_44f9_8036_6b39b4c971e5" checked="Qt::Checked" expanded="1" providerKey="ogr" source="./1956-aerial-imagery.geojson|layername=1956-aerial-imagery">
+    <layer-tree-layer providerKey="ogr" expanded="1" id="1956_aerial_imagery_108998d5_18d7_44f9_8036_6b39b4c971e5" source="./1956-aerial-imagery.geojson|layername=1956-aerial-imagery" name="1956-aerial-imagery" checked="Qt::Checked">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer name="soil-erosion-sample-points" id="soil_erosion_sample_points_ee9eccb8_5d50_445f_b27b_1d39b1ab45b9" checked="Qt::Checked" expanded="1" providerKey="ogr" source="./soil-erosion-sample-points.geojson|layername=soil-erosion-sample-points">
+    <layer-tree-layer providerKey="ogr" expanded="1" id="fi_coast_lines_2dfa2c23_8ce9_472f_aec0_9f05cebd2b2b" source="./fi-coast-lines.geojson|layername=fi-coast-lines" name="fi-coast-lines" checked="Qt::Checked">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer name="fi-coast-lines" id="fi_coast_lines_2dfa2c23_8ce9_472f_aec0_9f05cebd2b2b" checked="Qt::Checked" expanded="1" providerKey="ogr" source="./fi-coast-lines.geojson|layername=fi-coast-lines">
-      <customproperties/>
-    </layer-tree-layer>
-    <layer-tree-layer name="OpenStreetMap" id="OpenStreetMap_8c904952_40a7_4336_9b4c_4bca1ae43f83" checked="Qt::Checked" expanded="1" providerKey="wms" source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=http://a.tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&amp;zmax=19&amp;zmin=0">
+    <layer-tree-layer providerKey="wms" expanded="1" id="OpenStreetMap_8c904952_40a7_4336_9b4c_4bca1ae43f83" source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=http://a.tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&amp;zmax=19&amp;zmin=0" name="OpenStreetMap" checked="Qt::Checked">
       <customproperties/>
     </layer-tree-layer>
     <custom-order enabled="0">
       <item>fi_coast_lines_2dfa2c23_8ce9_472f_aec0_9f05cebd2b2b</item>
-      <item>soil_erosion_sample_points_ee9eccb8_5d50_445f_b27b_1d39b1ab45b9</item>
       <item>1956_aerial_imagery_108998d5_18d7_44f9_8036_6b39b4c971e5</item>
       <item>OpenStreetMap_8c904952_40a7_4336_9b4c_4bca1ae43f83</item>
     </custom-order>
   </layer-tree-group>
-  <snapping-settings mode="2" enabled="0" tolerance="12" intersection-snapping="0" type="1" unit="1">
+  <snapping-settings type="1" unit="1" intersection-snapping="0" mode="2" tolerance="12" enabled="0">
     <individual-layer-settings>
-      <layer-setting id="1956_aerial_imagery_108998d5_18d7_44f9_8036_6b39b4c971e5" enabled="0" tolerance="12" type="1" units="1"/>
-      <layer-setting id="soil_erosion_sample_points_ee9eccb8_5d50_445f_b27b_1d39b1ab45b9" enabled="0" tolerance="12" type="1" units="1"/>
-      <layer-setting id="fi_coast_lines_2dfa2c23_8ce9_472f_aec0_9f05cebd2b2b" enabled="0" tolerance="12" type="1" units="1"/>
+      <layer-setting type="1" id="1956_aerial_imagery_108998d5_18d7_44f9_8036_6b39b4c971e5" tolerance="12" enabled="0" units="1"/>
+      <layer-setting type="1" id="fi_coast_lines_2dfa2c23_8ce9_472f_aec0_9f05cebd2b2b" tolerance="12" enabled="0" units="1"/>
     </individual-layer-settings>
   </snapping-settings>
   <relations/>
-  <mapcanvas name="theMapCanvas" annotationsVisible="1">
+  <mapcanvas annotationsVisible="1" name="theMapCanvas">
     <units>meters</units>
     <extent>
-      <xmin>175854.13932448741979897</xmin>
-      <ymin>4172907.73765482008457184</ymin>
-      <xmax>463315.69613977964036167</xmax>
-      <ymax>4338424.21078774333000183</ymax>
+      <xmin>62396.19263934082118794</xmin>
+      <ymin>4081808.07067565713077784</ymin>
+      <xmax>637319.306269925320521</xmax>
+      <ymax>4412841.01694150362163782</ymax>
     </extent>
     <rotation>0</rotation>
     <destinationsrs>
@@ -72,103 +67,26 @@
   </mapcanvas>
   <projectModels/>
   <legend updateDrawingOrder="true">
-    <legendlayer name="1956-aerial-imagery" open="true" checked="Qt::Checked" drawingOrder="-1" showFeatureCount="0">
+    <legendlayer showFeatureCount="0" drawingOrder="-1" open="true" name="1956-aerial-imagery" checked="Qt::Checked">
       <filegroup open="true" hidden="false">
-        <legendlayerfile visible="1" layerid="1956_aerial_imagery_108998d5_18d7_44f9_8036_6b39b4c971e5" isInOverview="0"/>
+        <legendlayerfile layerid="1956_aerial_imagery_108998d5_18d7_44f9_8036_6b39b4c971e5" visible="1" isInOverview="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer name="soil-erosion-sample-points" open="true" checked="Qt::Checked" drawingOrder="-1" showFeatureCount="0">
+    <legendlayer showFeatureCount="0" drawingOrder="-1" open="true" name="fi-coast-lines" checked="Qt::Checked">
       <filegroup open="true" hidden="false">
-        <legendlayerfile visible="1" layerid="soil_erosion_sample_points_ee9eccb8_5d50_445f_b27b_1d39b1ab45b9" isInOverview="0"/>
+        <legendlayerfile layerid="fi_coast_lines_2dfa2c23_8ce9_472f_aec0_9f05cebd2b2b" visible="1" isInOverview="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer name="fi-coast-lines" open="true" checked="Qt::Checked" drawingOrder="-1" showFeatureCount="0">
+    <legendlayer showFeatureCount="0" drawingOrder="-1" open="true" name="OpenStreetMap" checked="Qt::Checked">
       <filegroup open="true" hidden="false">
-        <legendlayerfile visible="1" layerid="fi_coast_lines_2dfa2c23_8ce9_472f_aec0_9f05cebd2b2b" isInOverview="0"/>
-      </filegroup>
-    </legendlayer>
-    <legendlayer name="OpenStreetMap" open="true" checked="Qt::Checked" drawingOrder="-1" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile visible="1" layerid="OpenStreetMap_8c904952_40a7_4336_9b4c_4bca1ae43f83" isInOverview="0"/>
+        <legendlayerfile layerid="OpenStreetMap_8c904952_40a7_4336_9b4c_4bca1ae43f83" visible="1" isInOverview="0"/>
       </filegroup>
     </legendlayer>
   </legend>
   <mapViewDocks/>
   <mapViewDocks3D/>
-  <mapcanvas name="mAreaCanvas" annotationsVisible="1">
-    <units>degrees</units>
-    <extent>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>0</xmax>
-      <ymax>0</ymax>
-    </extent>
-    <rotation>0</rotation>
-    <destinationsrs>
-      <spatialrefsys>
-        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-        <srsid>3452</srsid>
-        <srid>4326</srid>
-        <authid>EPSG:4326</authid>
-        <description>WGS 84</description>
-        <projectionacronym>longlat</projectionacronym>
-        <ellipsoidacronym>WGS84</ellipsoidacronym>
-        <geographicflag>true</geographicflag>
-      </spatialrefsys>
-    </destinationsrs>
-    <rendermaptile>0</rendermaptile>
-    <expressionContextScope/>
-  </mapcanvas>
-  <mapcanvas name="mAreaCanvas" annotationsVisible="1">
-    <units>degrees</units>
-    <extent>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>0</xmax>
-      <ymax>0</ymax>
-    </extent>
-    <rotation>0</rotation>
-    <destinationsrs>
-      <spatialrefsys>
-        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-        <srsid>3452</srsid>
-        <srid>4326</srid>
-        <authid>EPSG:4326</authid>
-        <description>WGS 84</description>
-        <projectionacronym>longlat</projectionacronym>
-        <ellipsoidacronym>WGS84</ellipsoidacronym>
-        <geographicflag>true</geographicflag>
-      </spatialrefsys>
-    </destinationsrs>
-    <rendermaptile>0</rendermaptile>
-    <expressionContextScope/>
-  </mapcanvas>
-  <mapcanvas name="mAreaCanvas" annotationsVisible="1">
-    <units>degrees</units>
-    <extent>
-      <xmin>0</xmin>
-      <ymin>0</ymin>
-      <xmax>0</xmax>
-      <ymax>0</ymax>
-    </extent>
-    <rotation>0</rotation>
-    <destinationsrs>
-      <spatialrefsys>
-        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-        <srsid>3452</srsid>
-        <srid>4326</srid>
-        <authid>EPSG:4326</authid>
-        <description>WGS 84</description>
-        <projectionacronym>longlat</projectionacronym>
-        <ellipsoidacronym>WGS84</ellipsoidacronym>
-        <geographicflag>true</geographicflag>
-      </spatialrefsys>
-    </destinationsrs>
-    <rendermaptile>0</rendermaptile>
-    <expressionContextScope/>
-  </mapcanvas>
   <projectlayers>
-    <maplayer maxScale="0" hasScaleBasedVisibilityFlag="0" readOnly="0" autoRefreshEnabled="0" simplifyDrawingHints="1" autoRefreshTime="0" refreshOnNotifyMessage="" minScale="1e+8" simplifyAlgorithm="0" geometry="Polygon" simplifyMaxScale="1" refreshOnNotifyEnabled="0" labelsEnabled="0" styleCategories="AllStyleCategories" simplifyLocal="1" type="vector" simplifyDrawingTol="1">
+    <maplayer refreshOnNotifyMessage="" type="vector" geometry="Polygon" labelsEnabled="0" simplifyAlgorithm="0" simplifyDrawingTol="1" readOnly="0" autoRefreshEnabled="0" styleCategories="AllStyleCategories" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" autoRefreshTime="0" simplifyDrawingHints="1" maxScale="0" simplifyMaxScale="1" minScale="1e+8" refreshOnNotifyEnabled="0">
       <extent>
         <xmin>-61.50477999999999668</xmin>
         <ymin>-52.46394999999999698</ymin>
@@ -225,7 +143,7 @@
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial minz="0" maxy="0" crs="" minx="0" dimensions="2" maxz="0" miny="0" maxx="0"/>
+          <spatial maxy="0" dimensions="2" maxx="0" crs="" minx="0" miny="0" minz="0" maxz="0"/>
           <temporal>
             <period>
               <start></start>
@@ -249,76 +167,76 @@
         <Removable>1</Removable>
         <Searchable>1</Searchable>
       </flags>
-      <renderer-v2 enableorderby="0" symbollevels="0" forceraster="0" attr="present" type="categorizedSymbol">
+      <renderer-v2 type="categorizedSymbol" symbollevels="0" enableorderby="0" forceraster="0" attr="present">
         <categories>
-          <category symbol="0" value="0" render="true" label="0"/>
-          <category symbol="1" value="1" render="true" label="1"/>
+          <category label="0" symbol="0" render="true" value="0"/>
+          <category label="1" symbol="1" render="true" value="1"/>
         </categories>
         <symbols>
-          <symbol name="0" clip_to_extent="1" alpha="1" type="fill" force_rhr="0">
-            <layer class="SimpleFill" locked="0" pass="0" enabled="1">
-              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-              <prop v="79,222,194,0" k="color"/>
-              <prop v="bevel" k="joinstyle"/>
-              <prop v="0,0" k="offset"/>
-              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-              <prop v="MM" k="offset_unit"/>
-              <prop v="227,26,28,255" k="outline_color"/>
-              <prop v="solid" k="outline_style"/>
-              <prop v="0" k="outline_width"/>
-              <prop v="MM" k="outline_width_unit"/>
-              <prop v="solid" k="style"/>
+          <symbol type="fill" alpha="1" clip_to_extent="1" name="0" force_rhr="0">
+            <layer pass="0" class="SimpleFill" enabled="1" locked="0">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="79,222,194,0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="227,26,28,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" value="" type="QString"/>
+                  <Option type="QString" name="name" value=""/>
                   <Option name="properties"/>
-                  <Option name="type" value="collection" type="QString"/>
+                  <Option type="QString" name="type" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol name="1" clip_to_extent="1" alpha="1" type="fill" force_rhr="0">
-            <layer class="SimpleFill" locked="0" pass="0" enabled="1">
-              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-              <prop v="31,120,180,0" k="color"/>
-              <prop v="bevel" k="joinstyle"/>
-              <prop v="0,0" k="offset"/>
-              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-              <prop v="MM" k="offset_unit"/>
-              <prop v="31,120,180,255" k="outline_color"/>
-              <prop v="solid" k="outline_style"/>
-              <prop v="0" k="outline_width"/>
-              <prop v="MM" k="outline_width_unit"/>
-              <prop v="solid" k="style"/>
+          <symbol type="fill" alpha="1" clip_to_extent="1" name="1" force_rhr="0">
+            <layer pass="0" class="SimpleFill" enabled="1" locked="0">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="31,120,180,0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="31,120,180,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" value="" type="QString"/>
+                  <Option type="QString" name="name" value=""/>
                   <Option name="properties"/>
-                  <Option name="type" value="collection" type="QString"/>
+                  <Option type="QString" name="type" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </symbols>
         <source-symbol>
-          <symbol name="0" clip_to_extent="1" alpha="1" type="fill" force_rhr="0">
-            <layer class="SimpleFill" locked="0" pass="0" enabled="1">
-              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-              <prop v="196,60,57,0" k="color"/>
-              <prop v="bevel" k="joinstyle"/>
-              <prop v="0,0" k="offset"/>
-              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-              <prop v="MM" k="offset_unit"/>
-              <prop v="35,35,212,255" k="outline_color"/>
-              <prop v="solid" k="outline_style"/>
-              <prop v="0" k="outline_width"/>
-              <prop v="MM" k="outline_width_unit"/>
-              <prop v="solid" k="style"/>
+          <symbol type="fill" alpha="1" clip_to_extent="1" name="0" force_rhr="0">
+            <layer pass="0" class="SimpleFill" enabled="1" locked="0">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="196,60,57,0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,212,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" value="" type="QString"/>
+                  <Option type="QString" name="name" value=""/>
                   <Option name="properties"/>
-                  <Option name="type" value="collection" type="QString"/>
+                  <Option type="QString" name="type" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -328,29 +246,29 @@
         <sizescale/>
       </renderer-v2>
       <customproperties>
-        <property value="0" key="embeddedWidgets/count"/>
+        <property key="embeddedWidgets/count" value="0"/>
         <property key="variableNames"/>
         <property key="variableValues"/>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
-      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-        <DiagramCategory height="15" minScaleDenominator="0" maxScaleDenominator="1e+8" enabled="0" diagramOrientation="Up" penAlpha="255" width="15" lineSizeScale="3x:0,0,0,0,0,0" backgroundColor="#ffffff" penWidth="0" sizeType="MM" barWidth="5" minimumSize="0" scaleBasedVisibility="0" scaleDependency="Area" rotationOffset="270" labelPlacementMethod="XHeight" lineSizeType="MM" backgroundAlpha="255" penColor="#000000" sizeScale="3x:0,0,0,0,0,0" opacity="1">
-          <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
-          <attribute field="" color="#000000" label=""/>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory height="15" barWidth="5" penWidth="0" enabled="0" minimumSize="0" width="15" backgroundColor="#ffffff" scaleDependency="Area" maxScaleDenominator="1e+8" opacity="1" backgroundAlpha="255" diagramOrientation="Up" lineSizeScale="3x:0,0,0,0,0,0" penColor="#000000" penAlpha="255" labelPlacementMethod="XHeight" lineSizeType="MM" sizeScale="3x:0,0,0,0,0,0" scaleBasedVisibility="0" rotationOffset="270" sizeType="MM" minScaleDenominator="0">
+          <fontProperties style="" description="Ubuntu,11,-1,5,50,0,0,0,0,0"/>
+          <attribute color="#000000" label="" field=""/>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings zIndex="0" placement="1" linePlacementFlags="18" showAll="1" dist="0" obstacle="0" priority="0">
+      <DiagramLayerSettings linePlacementFlags="18" obstacle="0" dist="0" showAll="1" placement="1" zIndex="0" priority="0">
         <properties>
           <Option type="Map">
-            <Option name="name" value="" type="QString"/>
+            <Option type="QString" name="name" value=""/>
             <Option name="properties"/>
-            <Option name="type" value="collection" type="QString"/>
+            <Option type="QString" name="type" value="collection"/>
           </Option>
         </properties>
       </DiagramLayerSettings>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
         <activeChecks/>
         <checkConfiguration/>
       </geometryOptions>
@@ -378,37 +296,37 @@
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias name="" index="0" field="name"/>
-        <alias name="" index="1" field="present"/>
-        <alias name="" index="2" field="geotiff"/>
+        <alias field="name" name="" index="0"/>
+        <alias field="present" name="" index="1"/>
+        <alias field="geotiff" name="" index="2"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default field="name" applyOnUpdate="0" expression=""/>
-        <default field="present" applyOnUpdate="0" expression=""/>
-        <default field="geotiff" applyOnUpdate="0" expression=""/>
+        <default field="name" expression="" applyOnUpdate="0"/>
+        <default field="present" expression="" applyOnUpdate="0"/>
+        <default field="geotiff" expression="" applyOnUpdate="0"/>
       </defaults>
       <constraints>
-        <constraint field="name" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-        <constraint field="present" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-        <constraint field="geotiff" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
+        <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="name" constraints="0"/>
+        <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="present" constraints="0"/>
+        <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="geotiff" constraints="0"/>
       </constraints>
       <constraintExpressions>
-        <constraint field="name" desc="" exp=""/>
-        <constraint field="present" desc="" exp=""/>
-        <constraint field="geotiff" desc="" exp=""/>
+        <constraint exp="" field="name" desc=""/>
+        <constraint exp="" field="present" desc=""/>
+        <constraint exp="" field="geotiff" desc=""/>
       </constraintExpressions>
       <expressionfields/>
       <attributeactions>
-        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
       </attributeactions>
-      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
-          <column name="name" width="-1" hidden="0" type="field"/>
-          <column name="present" width="-1" hidden="0" type="field"/>
-          <column name="geotiff" width="-1" hidden="0" type="field"/>
-          <column width="-1" hidden="1" type="actions"/>
+          <column type="field" width="-1" name="name" hidden="0"/>
+          <column type="field" width="-1" name="present" hidden="0"/>
+          <column type="field" width="-1" name="geotiff" hidden="0"/>
+          <column type="actions" width="-1" hidden="1"/>
         </columns>
       </attributetableconfig>
       <conditionalstyles>
@@ -452,7 +370,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>name</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer maxScale="0" hasScaleBasedVisibilityFlag="0" autoRefreshEnabled="0" autoRefreshTime="0" refreshOnNotifyMessage="" minScale="1e+8" refreshOnNotifyEnabled="0" styleCategories="AllStyleCategories" type="raster">
+    <maplayer refreshOnNotifyMessage="" type="raster" autoRefreshEnabled="0" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" autoRefreshTime="0" maxScale="0" minScale="1e+8" refreshOnNotifyEnabled="0">
       <extent>
         <xmin>-20037508.34278924390673637</xmin>
         <ymin>-20037508.34278925508260727</ymin>
@@ -503,7 +421,7 @@ def my_form_open(dialog, layer, feature):
       </resourceMetadata>
       <provider>wms</provider>
       <noData>
-        <noDataList bandNo="1" useSrcNoData="0"/>
+        <noDataList useSrcNoData="0" bandNo="1"/>
       </noData>
       <map-layer-style-manager current="default">
         <map-layer-style name="default"/>
@@ -514,10 +432,10 @@ def my_form_open(dialog, layer, feature):
         <Searchable>1</Searchable>
       </flags>
       <customproperties>
-        <property value="Undefined" key="identify/format"/>
+        <property key="identify/format" value="Undefined"/>
       </customproperties>
       <pipe>
-        <rasterrenderer band="1" opacity="1" alphaBand="-1" type="singlebandcolordata">
+        <rasterrenderer type="singlebandcolordata" opacity="1" alphaBand="-1" band="1">
           <rasterTransparency/>
           <minMaxOrigin>
             <limits>None</limits>
@@ -529,12 +447,12 @@ def my_form_open(dialog, layer, feature):
           </minMaxOrigin>
         </rasterrenderer>
         <brightnesscontrast contrast="0" brightness="0"/>
-        <huesaturation colorizeGreen="128" colorizeStrength="100" grayscaleMode="0" colorizeOn="0" colorizeBlue="128" colorizeRed="255" saturation="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeBlue="128" saturation="0" grayscaleMode="0" colorizeStrength="100" colorizeRed="255"/>
         <rasterresampler maxOversampling="2"/>
       </pipe>
       <blendMode>0</blendMode>
     </maplayer>
-    <maplayer maxScale="0" hasScaleBasedVisibilityFlag="0" readOnly="0" autoRefreshEnabled="0" simplifyDrawingHints="1" autoRefreshTime="0" refreshOnNotifyMessage="" minScale="1e+8" simplifyAlgorithm="0" geometry="Polygon" simplifyMaxScale="1" refreshOnNotifyEnabled="0" labelsEnabled="0" styleCategories="AllStyleCategories" simplifyLocal="1" type="vector" simplifyDrawingTol="1">
+    <maplayer refreshOnNotifyMessage="" type="vector" geometry="Polygon" labelsEnabled="0" simplifyAlgorithm="0" simplifyDrawingTol="1" readOnly="0" autoRefreshEnabled="0" styleCategories="AllStyleCategories" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" autoRefreshTime="0" simplifyDrawingHints="1" maxScale="0" simplifyMaxScale="1" minScale="1e+8" refreshOnNotifyEnabled="0">
       <extent>
         <xmin>-61.45481000000000193</xmin>
         <ymin>-52.92575000000000074</ymin>
@@ -591,7 +509,7 @@ def my_form_open(dialog, layer, feature):
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial minz="0" maxy="0" crs="" minx="0" dimensions="2" maxz="0" miny="0" maxx="0"/>
+          <spatial maxy="0" dimensions="2" maxx="0" crs="" minx="0" miny="0" minz="0" maxz="0"/>
           <temporal>
             <period>
               <start></start>
@@ -615,26 +533,26 @@ def my_form_open(dialog, layer, feature):
         <Removable>1</Removable>
         <Searchable>1</Searchable>
       </flags>
-      <renderer-v2 enableorderby="0" symbollevels="0" forceraster="0" type="singleSymbol">
+      <renderer-v2 type="singleSymbol" symbollevels="0" enableorderby="0" forceraster="0">
         <symbols>
-          <symbol name="0" clip_to_extent="1" alpha="1" type="fill" force_rhr="0">
-            <layer class="SimpleFill" locked="0" pass="0" enabled="1">
-              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-              <prop v="162,251,110,64" k="color"/>
-              <prop v="bevel" k="joinstyle"/>
-              <prop v="0,0" k="offset"/>
-              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-              <prop v="MM" k="offset_unit"/>
-              <prop v="162,251,110,255" k="outline_color"/>
-              <prop v="solid" k="outline_style"/>
-              <prop v="0" k="outline_width"/>
-              <prop v="MM" k="outline_width_unit"/>
-              <prop v="solid" k="style"/>
+          <symbol type="fill" alpha="1" clip_to_extent="1" name="0" force_rhr="0">
+            <layer pass="0" class="SimpleFill" enabled="1" locked="0">
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="162,251,110,64"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="162,251,110,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" value="" type="QString"/>
+                  <Option type="QString" name="name" value=""/>
                   <Option name="properties"/>
-                  <Option name="type" value="collection" type="QString"/>
+                  <Option type="QString" name="type" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -644,29 +562,29 @@ def my_form_open(dialog, layer, feature):
         <sizescale/>
       </renderer-v2>
       <customproperties>
-        <property value="0" key="embeddedWidgets/count"/>
+        <property key="embeddedWidgets/count" value="0"/>
         <property key="variableNames"/>
         <property key="variableValues"/>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
-      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-        <DiagramCategory height="15" minScaleDenominator="0" maxScaleDenominator="1e+8" enabled="0" diagramOrientation="Up" penAlpha="255" width="15" lineSizeScale="3x:0,0,0,0,0,0" backgroundColor="#ffffff" penWidth="0" sizeType="MM" barWidth="5" minimumSize="0" scaleBasedVisibility="0" scaleDependency="Area" rotationOffset="270" labelPlacementMethod="XHeight" lineSizeType="MM" backgroundAlpha="255" penColor="#000000" sizeScale="3x:0,0,0,0,0,0" opacity="1">
-          <fontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
-          <attribute field="" color="#000000" label=""/>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory height="15" barWidth="5" penWidth="0" enabled="0" minimumSize="0" width="15" backgroundColor="#ffffff" scaleDependency="Area" maxScaleDenominator="1e+8" opacity="1" backgroundAlpha="255" diagramOrientation="Up" lineSizeScale="3x:0,0,0,0,0,0" penColor="#000000" penAlpha="255" labelPlacementMethod="XHeight" lineSizeType="MM" sizeScale="3x:0,0,0,0,0,0" scaleBasedVisibility="0" rotationOffset="270" sizeType="MM" minScaleDenominator="0">
+          <fontProperties style="" description="Ubuntu,11,-1,5,50,0,0,0,0,0"/>
+          <attribute color="#000000" label="" field=""/>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings zIndex="0" placement="1" linePlacementFlags="18" showAll="1" dist="0" obstacle="0" priority="0">
+      <DiagramLayerSettings linePlacementFlags="18" obstacle="0" dist="0" showAll="1" placement="1" zIndex="0" priority="0">
         <properties>
           <Option type="Map">
-            <Option name="name" value="" type="QString"/>
+            <Option type="QString" name="name" value=""/>
             <Option name="properties"/>
-            <Option name="type" value="collection" type="QString"/>
+            <Option type="QString" name="type" value="collection"/>
           </Option>
         </properties>
       </DiagramLayerSettings>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
         <activeChecks/>
         <checkConfiguration/>
       </geometryOptions>
@@ -715,52 +633,52 @@ def my_form_open(dialog, layer, feature):
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias name="" index="0" field="oid"/>
-        <alias name="" index="1" field="id"/>
-        <alias name="" index="2" field="loc_name"/>
-        <alias name="" index="3" field="wider_area"/>
-        <alias name="" index="4" field="latitude"/>
-        <alias name="" index="5" field="longitude"/>
+        <alias field="oid" name="" index="0"/>
+        <alias field="id" name="" index="1"/>
+        <alias field="loc_name" name="" index="2"/>
+        <alias field="wider_area" name="" index="3"/>
+        <alias field="latitude" name="" index="4"/>
+        <alias field="longitude" name="" index="5"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default field="oid" applyOnUpdate="0" expression=""/>
-        <default field="id" applyOnUpdate="0" expression=""/>
-        <default field="loc_name" applyOnUpdate="0" expression=""/>
-        <default field="wider_area" applyOnUpdate="0" expression=""/>
-        <default field="latitude" applyOnUpdate="0" expression=""/>
-        <default field="longitude" applyOnUpdate="0" expression=""/>
+        <default field="oid" expression="" applyOnUpdate="0"/>
+        <default field="id" expression="" applyOnUpdate="0"/>
+        <default field="loc_name" expression="" applyOnUpdate="0"/>
+        <default field="wider_area" expression="" applyOnUpdate="0"/>
+        <default field="latitude" expression="" applyOnUpdate="0"/>
+        <default field="longitude" expression="" applyOnUpdate="0"/>
       </defaults>
       <constraints>
-        <constraint field="oid" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-        <constraint field="id" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-        <constraint field="loc_name" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-        <constraint field="wider_area" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-        <constraint field="latitude" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-        <constraint field="longitude" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
+        <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="oid" constraints="0"/>
+        <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="id" constraints="0"/>
+        <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="loc_name" constraints="0"/>
+        <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="wider_area" constraints="0"/>
+        <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="latitude" constraints="0"/>
+        <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="longitude" constraints="0"/>
       </constraints>
       <constraintExpressions>
-        <constraint field="oid" desc="" exp=""/>
-        <constraint field="id" desc="" exp=""/>
-        <constraint field="loc_name" desc="" exp=""/>
-        <constraint field="wider_area" desc="" exp=""/>
-        <constraint field="latitude" desc="" exp=""/>
-        <constraint field="longitude" desc="" exp=""/>
+        <constraint exp="" field="oid" desc=""/>
+        <constraint exp="" field="id" desc=""/>
+        <constraint exp="" field="loc_name" desc=""/>
+        <constraint exp="" field="wider_area" desc=""/>
+        <constraint exp="" field="latitude" desc=""/>
+        <constraint exp="" field="longitude" desc=""/>
       </constraintExpressions>
       <expressionfields/>
       <attributeactions>
-        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
       </attributeactions>
-      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
-          <column name="oid" width="-1" hidden="0" type="field"/>
-          <column name="id" width="-1" hidden="0" type="field"/>
-          <column name="loc_name" width="-1" hidden="0" type="field"/>
-          <column name="wider_area" width="-1" hidden="0" type="field"/>
-          <column name="latitude" width="-1" hidden="0" type="field"/>
-          <column name="longitude" width="-1" hidden="0" type="field"/>
-          <column width="-1" hidden="1" type="actions"/>
+          <column type="field" width="-1" name="oid" hidden="0"/>
+          <column type="field" width="-1" name="id" hidden="0"/>
+          <column type="field" width="-1" name="loc_name" hidden="0"/>
+          <column type="field" width="-1" name="wider_area" hidden="0"/>
+          <column type="field" width="-1" name="latitude" hidden="0"/>
+          <column type="field" width="-1" name="longitude" hidden="0"/>
+          <column type="actions" width="-1" hidden="1"/>
         </columns>
       </attributetableconfig>
       <conditionalstyles>
@@ -810,382 +728,117 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>oid</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer maxScale="0" hasScaleBasedVisibilityFlag="0" readOnly="0" autoRefreshEnabled="0" simplifyDrawingHints="1" autoRefreshTime="0" refreshOnNotifyMessage="" minScale="1e+8" simplifyAlgorithm="0" geometry="Point" simplifyMaxScale="1" refreshOnNotifyEnabled="0" labelsEnabled="0" styleCategories="AllStyleCategories" simplifyLocal="1" type="vector" simplifyDrawingTol="1">
-      <extent>
-        <xmin>-60.97921000000000191</xmin>
-        <ymin>-52.1456799999999987</ymin>
-        <xmax>-57.82972000000000179</xmax>
-        <ymax>-51.53137000000000256</ymax>
-      </extent>
-      <id>soil_erosion_sample_points_ee9eccb8_5d50_445f_b27b_1d39b1ab45b9</id>
-      <datasource>./soil-erosion-sample-points.geojson|layername=soil-erosion-sample-points</datasource>
-      <keywordList>
-        <value></value>
-      </keywordList>
-      <layername>soil-erosion-sample-points</layername>
-      <srs>
-        <spatialrefsys>
-          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-          <srsid>3452</srsid>
-          <srid>4326</srid>
-          <authid>EPSG:4326</authid>
-          <description>WGS 84</description>
-          <projectionacronym>longlat</projectionacronym>
-          <ellipsoidacronym>WGS84</ellipsoidacronym>
-          <geographicflag>true</geographicflag>
-        </spatialrefsys>
-      </srs>
-      <resourceMetadata>
-        <identifier></identifier>
-        <parentidentifier></parentidentifier>
-        <language></language>
-        <type>dataset</type>
-        <title></title>
-        <abstract></abstract>
-        <links/>
-        <fees></fees>
-        <encoding></encoding>
-        <crs>
-          <spatialrefsys>
-            <proj4></proj4>
-            <srsid>0</srsid>
-            <srid>0</srid>
-            <authid></authid>
-            <description></description>
-            <projectionacronym></projectionacronym>
-            <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
-          </spatialrefsys>
-        </crs>
-        <extent/>
-      </resourceMetadata>
-      <provider encoding="UTF-8">ogr</provider>
-      <vectorjoins/>
-      <layerDependencies/>
-      <dataDependencies/>
-      <legend type="default-vector"/>
-      <expressionfields/>
-      <map-layer-style-manager current="default">
-        <map-layer-style name="default"/>
-      </map-layer-style-manager>
-      <auxiliaryLayer/>
-      <flags>
-        <Identifiable>1</Identifiable>
-        <Removable>1</Removable>
-        <Searchable>1</Searchable>
-      </flags>
-      <renderer-v2 enableorderby="0" symbollevels="0" forceraster="0" type="singleSymbol">
-        <symbols>
-          <symbol name="0" clip_to_extent="1" alpha="1" type="marker" force_rhr="0">
-            <layer class="SimpleMarker" locked="0" pass="0" enabled="1">
-              <prop v="0" k="angle"/>
-              <prop v="225,89,137,255" k="color"/>
-              <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
-              <prop v="circle" k="name"/>
-              <prop v="0,0" k="offset"/>
-              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-              <prop v="MM" k="offset_unit"/>
-              <prop v="35,35,35,255" k="outline_color"/>
-              <prop v="solid" k="outline_style"/>
-              <prop v="0" k="outline_width"/>
-              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-              <prop v="MM" k="outline_width_unit"/>
-              <prop v="diameter" k="scale_method"/>
-              <prop v="2" k="size"/>
-              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-              <prop v="MM" k="size_unit"/>
-              <prop v="1" k="vertical_anchor_point"/>
-              <data_defined_properties>
-                <Option type="Map">
-                  <Option name="name" value="" type="QString"/>
-                  <Option name="properties"/>
-                  <Option name="type" value="collection" type="QString"/>
-                </Option>
-              </data_defined_properties>
-            </layer>
-          </symbol>
-        </symbols>
-        <rotation/>
-        <sizescale/>
-      </renderer-v2>
-      <customproperties/>
-      <blendMode>0</blendMode>
-      <featureBlendMode>0</featureBlendMode>
-      <layerOpacity>1</layerOpacity>
-      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
-        <activeChecks/>
-        <checkConfiguration/>
-      </geometryOptions>
-      <fieldConfiguration>
-        <field name="Name">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="description">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="timestamp">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="begin">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="end">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="altitudeMode">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="tessellate">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="extrude">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="visibility">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="drawOrder">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-        <field name="icon">
-          <editWidget type="">
-            <config>
-              <Option/>
-            </config>
-          </editWidget>
-        </field>
-      </fieldConfiguration>
-      <aliases>
-        <alias name="" index="0" field="Name"/>
-        <alias name="" index="1" field="description"/>
-        <alias name="" index="2" field="timestamp"/>
-        <alias name="" index="3" field="begin"/>
-        <alias name="" index="4" field="end"/>
-        <alias name="" index="5" field="altitudeMode"/>
-        <alias name="" index="6" field="tessellate"/>
-        <alias name="" index="7" field="extrude"/>
-        <alias name="" index="8" field="visibility"/>
-        <alias name="" index="9" field="drawOrder"/>
-        <alias name="" index="10" field="icon"/>
-      </aliases>
-      <excludeAttributesWMS/>
-      <excludeAttributesWFS/>
-      <defaults>
-        <default field="Name" applyOnUpdate="0" expression=""/>
-        <default field="description" applyOnUpdate="0" expression=""/>
-        <default field="timestamp" applyOnUpdate="0" expression=""/>
-        <default field="begin" applyOnUpdate="0" expression=""/>
-        <default field="end" applyOnUpdate="0" expression=""/>
-        <default field="altitudeMode" applyOnUpdate="0" expression=""/>
-        <default field="tessellate" applyOnUpdate="0" expression=""/>
-        <default field="extrude" applyOnUpdate="0" expression=""/>
-        <default field="visibility" applyOnUpdate="0" expression=""/>
-        <default field="drawOrder" applyOnUpdate="0" expression=""/>
-        <default field="icon" applyOnUpdate="0" expression=""/>
-      </defaults>
-      <constraints>
-        <constraint field="Name" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-        <constraint field="description" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-        <constraint field="timestamp" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-        <constraint field="begin" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-        <constraint field="end" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-        <constraint field="altitudeMode" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-        <constraint field="tessellate" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-        <constraint field="extrude" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-        <constraint field="visibility" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-        <constraint field="drawOrder" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-        <constraint field="icon" notnull_strength="0" unique_strength="0" constraints="0" exp_strength="0"/>
-      </constraints>
-      <constraintExpressions>
-        <constraint field="Name" desc="" exp=""/>
-        <constraint field="description" desc="" exp=""/>
-        <constraint field="timestamp" desc="" exp=""/>
-        <constraint field="begin" desc="" exp=""/>
-        <constraint field="end" desc="" exp=""/>
-        <constraint field="altitudeMode" desc="" exp=""/>
-        <constraint field="tessellate" desc="" exp=""/>
-        <constraint field="extrude" desc="" exp=""/>
-        <constraint field="visibility" desc="" exp=""/>
-        <constraint field="drawOrder" desc="" exp=""/>
-        <constraint field="icon" desc="" exp=""/>
-      </constraintExpressions>
-      <expressionfields/>
-      <attributeactions>
-        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
-      </attributeactions>
-      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
-        <columns/>
-      </attributetableconfig>
-      <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
-      </conditionalstyles>
-      <editform tolerant="1"></editform>
-      <editforminit/>
-      <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
-      <editforminitcode><![CDATA[]]></editforminitcode>
-      <featformsuppress>0</featformsuppress>
-      <editorlayout>generatedlayout</editorlayout>
-      <editable/>
-      <labelOnTop/>
-      <widgets/>
-      <previewExpression></previewExpression>
-      <mapTip></mapTip>
-    </maplayer>
   </projectlayers>
   <layerorder>
     <layer id="fi_coast_lines_2dfa2c23_8ce9_472f_aec0_9f05cebd2b2b"/>
-    <layer id="soil_erosion_sample_points_ee9eccb8_5d50_445f_b27b_1d39b1ab45b9"/>
     <layer id="1956_aerial_imagery_108998d5_18d7_44f9_8036_6b39b4c971e5"/>
     <layer id="OpenStreetMap_8c904952_40a7_4336_9b4c_4bca1ae43f83"/>
   </layerorder>
   <properties>
-    <WFSLayers type="QStringList"/>
-    <WMTSLayers>
-      <Layer type="QStringList"/>
-      <Project type="bool">false</Project>
-      <Group type="QStringList"/>
-    </WMTSLayers>
-    <WMSFees type="QString">conditions unknown</WMSFees>
-    <WCSLayers type="QStringList"/>
-    <WMSImageQuality type="int">90</WMSImageQuality>
-    <WMSRootName type="QString"></WMSRootName>
-    <WMSOnlineResource type="QString"></WMSOnlineResource>
-    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
-    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
-    <WFSUrl type="QString"></WFSUrl>
-    <Measure>
-      <Ellipsoid type="QString">WGS84</Ellipsoid>
-    </Measure>
-    <WMSServiceTitle type="QString"></WMSServiceTitle>
-    <WMSKeywordList type="QStringList">
-      <value></value>
-    </WMSKeywordList>
-    <WCSUrl type="QString"></WCSUrl>
-    <WMSContactOrganization type="QString"></WMSContactOrganization>
-    <WMSUrl type="QString"></WMSUrl>
-    <WMTSGrids>
-      <CRS type="QStringList"/>
-      <Config type="QStringList"/>
-    </WMTSGrids>
     <DefaultStyles>
-      <Line type="QString"></Line>
-      <Opacity type="double">1</Opacity>
-      <Fill type="QString"></Fill>
-      <ColorRamp type="QString"></ColorRamp>
-      <RandomColors type="bool">true</RandomColors>
       <Marker type="QString"></Marker>
+      <Opacity type="double">1</Opacity>
+      <ColorRamp type="QString"></ColorRamp>
+      <Fill type="QString"></Fill>
+      <RandomColors type="bool">true</RandomColors>
+      <Line type="QString"></Line>
     </DefaultStyles>
-    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
-    <Gui>
-      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
-      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
-      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
-      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
-      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
-      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
-      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
-    </Gui>
-    <WMSMaxAtlasFeatures type="int">1</WMSMaxAtlasFeatures>
-    <WMSPrecision type="QString">8</WMSPrecision>
-    <WMSContactPosition type="QString"></WMSContactPosition>
-    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
-    <PAL>
-      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
-      <TextFormat type="int">0</TextFormat>
-      <ShowingAllLabels type="bool">false</ShowingAllLabels>
-      <SearchMethod type="int">0</SearchMethod>
-      <ShowingCandidates type="bool">false</ShowingCandidates>
-      <CandidatesPolygon type="int">30</CandidatesPolygon>
-      <DrawRectOnly type="bool">false</DrawRectOnly>
-      <CandidatesLine type="int">50</CandidatesLine>
-      <CandidatesPoint type="int">16</CandidatesPoint>
-    </PAL>
-    <WFSTLayers>
-      <Update type="QStringList"/>
-      <Insert type="QStringList"/>
-      <Delete type="QStringList"/>
-    </WFSTLayers>
-    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
-    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
-    <WMTSUrl type="QString"></WMTSUrl>
-    <WMSContactPerson type="QString"></WMSContactPerson>
-    <Paths>
-      <Absolute type="bool">false</Absolute>
-    </Paths>
-    <SpatialRefSys>
-      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
-    </SpatialRefSys>
-    <Legend>
-      <filterByMap type="bool">false</filterByMap>
-    </Legend>
-    <WMTSMinScale type="int">5000</WMTSMinScale>
-    <WMTSJpegLayers>
-      <Layer type="QStringList"/>
-      <Project type="bool">false</Project>
-      <Group type="QStringList"/>
-    </WMTSJpegLayers>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <WMSFees type="QString">conditions unknown</WMSFees>
     <Measurement>
       <DistanceUnits type="QString">meters</DistanceUnits>
       <AreaUnits type="QString">m2</AreaUnits>
     </Measurement>
+    <WMTSMinScale type="int">5000</WMTSMinScale>
+    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <WMSContactPerson type="QString"></WMSContactPerson>
     <Macros>
       <pythonCode type="QString"></pythonCode>
     </Macros>
-    <PositionPrecision>
-      <DegreeFormat type="QString">MU</DegreeFormat>
-      <Automatic type="bool">true</Automatic>
-      <DecimalPlaces type="int">2</DecimalPlaces>
-    </PositionPrecision>
-    <WMSContactMail type="QString"></WMSContactMail>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <Measure>
+      <Ellipsoid type="QString">WGS84</Ellipsoid>
+    </Measure>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <WCSLayers type="QStringList"/>
+    <WMSRootName type="QString"></WMSRootName>
     <WMTSPngLayers>
+      <Group type="QStringList"/>
       <Layer type="QStringList"/>
       <Project type="bool">false</Project>
-      <Group type="QStringList"/>
     </WMTSPngLayers>
-    <WMSContactPhone type="QString"></WMSContactPhone>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMSContactOrganization type="QString"></WMSContactOrganization>
+    <Gui>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+    </Gui>
+    <WMTSLayers>
+      <Group type="QStringList"/>
+      <Layer type="QStringList"/>
+      <Project type="bool">false</Project>
+    </WMTSLayers>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <WMTSJpegLayers>
+      <Group type="QStringList"/>
+      <Layer type="QStringList"/>
+      <Project type="bool">false</Project>
+    </WMTSJpegLayers>
+    <WFSUrl type="QString"></WFSUrl>
+    <PAL>
+      <SearchMethod type="int">0</SearchMethod>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <TextFormat type="int">0</TextFormat>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <CandidatesLine type="int">50</CandidatesLine>
+    </PAL>
+    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WMSMaxAtlasFeatures type="int">1</WMSMaxAtlasFeatures>
+    <WFSLayers type="QStringList"/>
+    <WMSServiceTitle type="QString"></WMSServiceTitle>
+    <WMSPrecision type="QString">8</WMSPrecision>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
+    <PositionPrecision>
+      <Automatic type="bool">true</Automatic>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+    </PositionPrecision>
+    <WMTSUrl type="QString"></WMTSUrl>
+    <WCSUrl type="QString"></WCSUrl>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <WFSTLayers>
+      <Insert type="QStringList"/>
+      <Delete type="QStringList"/>
+      <Update type="QStringList"/>
+    </WFSTLayers>
+    <WMTSGrids>
+      <Config type="QStringList"/>
+      <CRS type="QStringList"/>
+    </WMTSGrids>
+    <WMSUrl type="QString"></WMSUrl>
   </properties>
   <visibility-presets/>
   <transformContext/>
