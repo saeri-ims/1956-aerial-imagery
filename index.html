@@ -102,7 +102,7 @@
     map.on('load', function() {
       map.addControl(new mapboxgl.ScaleControl());
       var images = $.ajax({
-        url: "data/1956-aerial-imagery.geojson",
+        url: "data/process/soil-1956-aerial-imagery.geojson",
         dataType: "json",
         success: console.log("Data successfully loaded."),
         error: function(xhr) {
